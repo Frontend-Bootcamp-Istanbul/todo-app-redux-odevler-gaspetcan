@@ -92,8 +92,7 @@ class App extends Component {
             </div>
             <TodoList
                 title="Todolist"
-                todos={this.filterTodos(this.props.todos, this.props.activeFilter)}
-                onCheckedToggle={this.toggleCompleteStatus} />
+                todos={this.filterTodos(this.props.todos, this.props.activeFilter)}/>
         </div>
     );
   }

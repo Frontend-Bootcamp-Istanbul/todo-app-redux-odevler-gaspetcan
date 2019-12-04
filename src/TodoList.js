@@ -1,7 +1,6 @@
 import React from 'react';
 import Todo from './Todo';
 
-
 class TodoList extends React.Component{
     constructor(props){
         super(props);
@@ -16,7 +15,6 @@ class TodoList extends React.Component{
                         return <Todo
                             {...todo}
                             key={todo.id}
-                            onCheckedToggle={this.props.onCheckedToggle}
                         />
                     })
                 }
